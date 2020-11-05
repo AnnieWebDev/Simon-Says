@@ -1,0 +1,86 @@
+body {
+    background-color: #D0E7FF;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.game {
+    width: 550px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.game__field {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.game__square {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    opacity: 0.4;
+    transition: 0.2s linear;
+
+}
+
+.game__square_blue {
+    background-color: blue;
+}
+
+.game__square_red {
+    background-color: red;
+}
+
+.game__square_yellow {
+    background-color: yellow;
+}
+
+.game__square_green {
+    background-color: green;
+}
+
+.game__square_active{
+    opacity: 1;
+}
+
+.game__info {
+    width: 200px;
+}
+
+.game__info-title {
+    margin-top: 0;
+}
+
+.game__start {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 9px;
+    width: 140px;
+}
+
+.game__start[disabled]{
+    cursor: not-allowed;
+    opacity: 0.4;
+
+}
+
+.game__message {
+    font-weight: 700;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.game__difficulty-label {
+    display: block;
+    margin-bottom: 3px;
+}

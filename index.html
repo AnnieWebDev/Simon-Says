@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simon Says</title>
+</head>
+
+<body>
+
+    <h1 class="title">Simon Says</h1>
+
+    <div class="game">
+
+        <div class="game__field">
+            <button class="game__square game__square_blue"></button>
+            <button class="game__square game__square_red"></button>
+            <button class="game__square game__square_yellow"></button>
+            <button class="game__square game__square_green"></button>
+        </div>
+
+
+        <div class="game__info">
+            <h2 class="game__info-title">Round: <span class="game__round">1</span></h2>
+            <button class="game__start">Start</button>
+            <p class="game__message">ARE YOU READY?</p>
+                        <div class="game__difficulty-container">
+                <h2 class="game__info-title">Difficulty</h2>
+                <label class="game__difficulty-label">
+                    <input type="radio" name="difficulty" class="game__difficulty-input" value="1500">
+                    Easy
+                </label>
+                <label class="game__difficulty-label">
+                    <input type="radio" name="difficulty" class="game__difficulty-input" value="1000" checked>
+                    Medium
+                </label>
+                <label class="game__difficulty-label">
+                    <input type="radio" name="difficulty" class="game__difficulty-input" value="400">
+                    Hard
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
